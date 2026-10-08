@@ -198,11 +198,12 @@ header.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.12)}
 .marquee i{font-style:normal;padding:0 1.4rem;opacity:.7}
 .marquee:hover .track{animation-play-state:paused}
 @media(min-width:960px){
-  .marquee .track{display:flex;justify-content:space-evenly;align-items:center;animation:none;max-width:1120px;margin:0 auto;padding:0 1.25rem}
+  .marquee .track{display:flex;justify-content:space-evenly;align-items:center;animation:none;width:100%;padding:0 clamp(1.25rem,3vw,4rem)}
   .marquee i{padding:0}
   .marquee .dup{display:none}
 }
 @media(min-width:960px) and (max-width:1150px){.marquee{font-size:.85rem}}
+@media(min-width:1500px){.marquee{font-size:1.05rem;padding:1.05rem 0}}
 @keyframes scroll{to{transform:translateX(-50%)}}
 
 .btn{position:relative;overflow:hidden}
